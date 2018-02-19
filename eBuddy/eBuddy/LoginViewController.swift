@@ -10,13 +10,30 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var textfield1: UITextField!
+    @IBOutlet weak var textfield2: UITextField!
     @IBOutlet weak var loginbtn: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationController?.navigationBar.barTintColor = UIColor(red: 0.1, green: 0.6, blue: 1.5, alpha: 1.0)
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         self.navigationController?.navigationBar.tintColor = UIColor.white
+        
+        
+        let myColor : UIColor = UIColor(red: 0.1, green: 0.6, blue: 1.5, alpha: 1.0)
+        
+        self.textfield1.layer.cornerRadius = 10
+        self.textfield2.layer.cornerRadius = 10
+        self.textfield1.clipsToBounds = true
+        self.textfield2.clipsToBounds = true
+        self.textfield1.layer.borderColor = myColor.cgColor
+        self.textfield2.layer.borderColor = myColor.cgColor
+        self.textfield1.layer.borderWidth = 1.0
+        self.textfield2.layer.borderWidth = 1.0
         
         self.loginbtn.layer.cornerRadius = 20
         self.loginbtn.clipsToBounds = true

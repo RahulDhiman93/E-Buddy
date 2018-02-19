@@ -96,6 +96,8 @@
                     <navigationItem key="navigationItem" title="E-Buddy" leftItemsSupplementBackButton="YES" id="fKj-Cz-TQD"/>
                     <connections>
                         <outlet property="loginbtn" destination="Y45-LC-tcS" id="p2c-KC-g4J"/>
+                        <outlet property="textfield1" destination="qWu-r4-Nuj" id="9kt-M3-cUA"/>
+                        <outlet property="textfield2" destination="Wc9-TO-tlI" id="FqH-4d-nPd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

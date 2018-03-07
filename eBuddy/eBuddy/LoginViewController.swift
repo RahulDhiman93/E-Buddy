@@ -13,6 +13,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var textfield1: UITextField!
     @IBOutlet weak var textfield2: UITextField!
     @IBOutlet weak var loginbtn: UIButton!
+    @IBOutlet weak var studentID: UILabel!
+    @IBOutlet weak var TestID: UILabel!
     
     
     
@@ -22,6 +24,9 @@ class LoginViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = UIColor(red: 0.1, green: 0.6, blue: 1.5, alpha: 1.0)
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         self.navigationController?.navigationBar.tintColor = UIColor.white
+        
+        self.studentID.font = UIFont.boldSystemFont(ofSize: 25.0)
+        self.TestID.font = UIFont.boldSystemFont(ofSize: 25.0)
         
         
         let myColor : UIColor = UIColor(red: 0.1, green: 0.6, blue: 1.5, alpha: 1.0)
@@ -35,7 +40,7 @@ class LoginViewController: UIViewController {
         self.textfield1.layer.borderWidth = 1.0
         self.textfield2.layer.borderWidth = 1.0
         
-        self.loginbtn.layer.cornerRadius = 20
+        self.loginbtn.layer.cornerRadius = 15
         self.loginbtn.clipsToBounds = true
         
         

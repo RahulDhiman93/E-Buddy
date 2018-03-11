@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
         self.textfield1.layer.borderWidth = 1.0
         self.textfield2.layer.borderWidth = 1.0
         
-        self.loginbtn.layer.cornerRadius = 15
+        self.loginbtn.layer.cornerRadius = 20
         self.loginbtn.clipsToBounds = true
         
         
